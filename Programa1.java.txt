@@ -1,1 +1,2 @@
 inform java*.
+int codigo string nombre;
