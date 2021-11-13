@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <!-- method "post" para seguridad de la información capturada, evitar GET -->
+    <form method="post"> 
+        <h3>texto</h3>
+        <!-- label para variable nombre -->
+        <!-- Para capturar información/ string / id para que Javascrip capture (muy importante id)/ maxlength máximo de carácteres-->
+        <label for="nombre">Nombre del Usuario: </label>
+        <input type="text" name="nombre" id="nombre" maxlength="80">
+
+        <!--Para las contraseñas / type "password" -->
+        <h3>Contraseña</h3>
+        <label for="clave">Contraseña: </label>
+        <input type="password" name="clave" id="clave" maxlength="10">
+
+        <!-- Colocar un comentario/ textarea: un recuadro para colocar información, los números para el tamaño del recuadro  -->
+        <h3>Area de Texto</h3>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+
+        <!-- Spinner que permite incrementar o desminuir números/ min(minimo) / max (maximo ) step (de cuanto en cuanto)-->
+        <h3>Spinner</h3>
+        <label for="spinner">Spinner: </label>
+        <input type="number" name="spinner" id="spinner" min="0" max="20" step="1"> 
+
+        <!-- fecha (input date) -->
+        <h3>Fecha</h3>
+        <label for="fecha">Fecha: </label>
+        <input type="date" name="fecha" id="fecha">
+
+        <!-- fecha con la hora (input datetime-local) -->
+        <h3>Fecha-Hora</h3>
+        <label for="fecha-hora">Fecha Hora: </label>
+        <input type="datetime-local" name="fecha-hora" id="fecha-hora">
+
+        <!-- Semana (input type week) -->
+        <h3>Semana</h3>
+        <label for="semana">Semana</label>
+        <input type="week" name="semana" id="semana">
+
+        <!-- Hora  (input type time) -->
+        <h3>hora</h3>
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora">
+
+        <!-- Correos @ (input type email)-->
+        <h3>Email</h3>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <!--Los botones de opción-ejemplo: M o F () /el id no va -->
+        <h3>Radio</h3>
+        <label for="genero">Genero</label><br>
+        <input type="radio" name="genero" id="" value="F"> Femenino <br>
+        <input type="radio" name="genero" id="" value="M"> Masculino <br>
+
+        <!--Listas de Despliegue / select name (varias opciones)  -->
+        <h3>Lista de Despliegue</h3>
+        <select name="estado_civil" id="estado_civil">Estado Civil
+            <option value="1">Soltero</option>
+            <option value="2">Casado</option>
+            <option value="3">Divorciado</option>
+            <option value="4">Unión Libre</option>
+            <option value="5">Viudo</option>
+        </select>
+
+        <!--Adjuntar archivos (input type file)  -->
+        <h3>Adjuntar archivo</h3>
+        <label for="archivo">Archivo</label>
+        <input type="file" name="archivo" id="archivo">
+
+        <!--El Botón (input typo submit)-->
+        <h3>Botón</h3>
+        <input type="submit" value="Aceptar">
+        
+    </form>
+</body>
+</html>
